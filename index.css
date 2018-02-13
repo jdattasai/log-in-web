@@ -1,0 +1,93 @@
+*{
+	border: 0;
+	padding: 0px;
+	margin: 0px;
+}
+body{
+
+margin: 0px;
+padding: 0px;
+margin: 0px;
+font-family: sans-serif;
+}
+.container
+{
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+.slider{
+	position: relative;
+	width: 500%;
+	animation: animate 15s linear infinite;
+}
+.slide{
+	position: relative;
+	width: 20%;
+	float: left;
+	height: 100vh;
+}
+.slide{
+	background-size: cover;
+}
+.slide:nth-child(1){
+	background: url('1.jpeg');
+}
+.slide:nth-child(2){
+	background: url('2.jpeg');
+}
+.slide:nth-child(3){
+	background: url('3.jpg');
+}
+.slide:nth-child(4){
+	background: url('4.jpeg');
+}
+.slide:nth-child(5){
+	background: url('5.jpeg');
+}
+
+@keyframes animate{
+	0%{left: 0;}
+	16%{left: 0;}
+	20%{left: -100%;}
+	36%{left: -100%;}
+	40%{left: -200%;}
+	56%{left: -200%;}
+	60%{left: -300%;}
+	76%{left: -300%;}
+	80%{left: -400%;}
+	96%{left: -400%;}
+	100%{left: 0;}
+}
+.login
+{
+	width: 230px;
+	height: 35px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	opacity: .6;
+}
+.login li
+{
+	list-style: none;
+	text-align: center;
+}
+.login li a{
+color: white;
+text-decoration: none;
+font-weight: bold;
+font-size: 25px;
+}
+.login li a:hover{
+	color: green;
+	margin: 0px;
+	border:0px;
+	cursor: pointer;
+	font-size: 22px;
+	padding:none;
+}
